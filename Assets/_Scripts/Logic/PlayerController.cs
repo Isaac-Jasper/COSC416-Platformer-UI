@@ -63,6 +63,10 @@ public class PlayerController : MonoBehaviour
         }
     }
 
+    public void UpdatePlayerMaxSpeed(float speed) {
+        maxSpeed = speed;
+    }
+
     private void OnCollisionStay(Collision collision)
     {
         int contactCount = collision.contactCount;
